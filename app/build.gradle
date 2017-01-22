@@ -17,6 +17,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    // https://github.com/square/okio/issues/58
+    lintOptions {
+        disable 'InvalidPackage'
+    }
 }
 def versions = [
         support : "25.1.0",
