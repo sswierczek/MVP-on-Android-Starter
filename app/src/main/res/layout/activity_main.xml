@@ -10,8 +10,30 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.intive.mvponandroidstarter.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/home_load_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/home_load_button_text" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_images_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_load_button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/home_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
 </RelativeLayout>

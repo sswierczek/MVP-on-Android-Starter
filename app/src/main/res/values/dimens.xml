@@ -1,5 +1,9 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="home_image_item_height">96dp</dimen>
+    <dimen name="home_image_item_layout_cornet_radius">4dp</dimen>
+    <dimen name="home_image_item_thumbnail_margin">16dp</dimen>
+    <dimen name="home_image_item_thumbnail_size">64dp</dimen>
 </resources>
